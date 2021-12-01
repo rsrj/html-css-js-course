@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Atividade 3 - Rowspan e Colspan</title>
+		<meta charset="utf-8">
+		<style>
+			table,
+			th,
+			td {
+				
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+		<caption style="padding: 10px;">Comparison of models</caption>
+			<tr>
+				<td align="center" width=125>Model</td>
+				<td align="center" width=125>OS</td>
+				<td align="center" width=125>Display</td>
+				<td align="center" width=125>RAM</td>
+			</tr>
+			<tr>
+				<td align="center" >Samsung Galaxy S7</td>
+				<td align="center" rowspan="2" valign="top">Android</td>
+				<td align="center" valign="top">5.1"</td>
+				<td align="center" valign="top">4 GB</td>
+			</tr>
+			<tr>
+				<td align="center" >Sony Xperia Z5</td>
+				<td align="center" >4.6"</td>
+				<td align="center" rowspan="2" valign="top">2 GB</td>
+			</tr>
+			<tr>
+				<td align="center" >Apple Iphone 6s</td>
+				<td align="center" >iOS</td>
+				<td align="center" >4.7"</td>
+			</tr>
+		</table>
+	</body>
+</html>
