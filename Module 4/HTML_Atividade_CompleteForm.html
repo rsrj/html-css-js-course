@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Atividade - CompleteForm</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="https://www.google.com/" target="_blank" method="get">
+			<p><b>Cadastro de Produtos</b></p>
+			<label for="nprod">Nome do Produto:</label>
+			<input type="text" id="nprod" name="nprod" />
+			<br><br>
+			<label for="pprod">Preço do Produto:</label>
+			<input type="text" id="pprod" name="pprod" />
+			<br><br>
+			<label for="cod_prod">Código Secreto:</label>
+			<input type="text" id="cod_prod" name="cod_prod" />
+			<br><br>
+			<p><b>Forma de Pagamento</b></p>
+			<input type="radio" name="cartao" value="visa" checked>Crédito-Visa
+			<input type="radio" name="cartao" value="master">Crédito-Master
+			<br><br>
+			<p><b>O produto é:</b></p>
+			<input type="checkbox" name="chk_bonito" value="bonito" >Bonito
+			<input type="checkbox" name="chk_feio" value="feio">Feio
+			<input type="checkbox" name="chk_gostoso" value="gostoso" >Gostoso
+			<input type="checkbox" name="chk_barato" value="barato">Barato
+			<input type="checkbox" name="chk_caro" value="caro">Caro
+			<p><b>Você recomendaria esse produto para um amigo?</b></p>
+			Nunca <input type="range" name="recomendacao" value="100"> Sempre
+			<p><b>Por onde você ficou sabendo desse produto?</b></p>
+			<label for="options">Escolha uma opção</label>
+			<select id="options" name="options">
+				<optgroup label="Redes Sociais">
+					<option value="facebook">Facebook</option>
+					<option value="linkedin">LinkedIn</option>
+					<option value="instagram">Instagram</option>
+				</optgroup>
+				<optgroup label="Boca a boca">
+					<option value="amigo">Amigo</option>
+					<option value="papagaio" selected>Papagaio</option>
+					<option value="familiar">Familiar</option>
+					<option value="vizinho">Vizinho</option>
+				</optgroup>
+				<optgroup label="Propagandas">
+					<option value="outdoor">Outdoor</option>
+					<option value="amazon">Amazon</option>
+				</optgroup>
+				<option value="outros">Outros</option>
+			</select>
+			<p><b>Enviar formulário</b></p>
+			Enviar:<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+	</body>
+
+</html>
