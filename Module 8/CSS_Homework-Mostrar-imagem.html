@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mostrar imagem ao passar mouse no link</title>
+        <style type="text/css">
+            * {
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+            }
+            ul {
+                margin: 20px 0 0 20px;
+                list-style: none;
+            }
+
+            a {
+                position: relative; /* Para que a imagem não saia fora do link */
+                display: block;
+                width: 100px;
+                padding: 5px;
+                border:1px #144E75 solid;
+                background-color: #2388CB;
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            a:hover {
+                background-color: #144E75;
+            }
+            a span {
+                display: none; /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+            }
+            a:hover span {
+                display: block; /* Tranforma o SPAN em um elemento do tipo bloco */
+                position: absolute; /* Para você poder posicionar a vontade, sem quebrar o layout em volta */
+                top: 0px; /* Para ficar na mesma altura do link */
+                left: 100%; /* Empurra a imagem para fora do link, ficando a lado do mesmo */
+                border: 2px #2388CB solid; /* Estilo extra, lembrando que você pode colocar qualquer estilo nesse elemento */
+            }
+			img{
+				width
+			}
+			
+			.font {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				font-size: 15px;
+				letter-spacing: 0px;
+				word-spacing: -1px;
+				color: #FFFFFF;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: normal;
+				font-variant: normal;
+				text-transform: none;
+			}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a class="font" href="#">Gato<span><img src="images/gato.jpg" width="400"></span></a>
+            </li>
+            <li>
+                <a class="font" href="#">Cachorro<span><img src="images/cachorro.jpg" width="400"></span></a>
+            </li>
+            <li>
+                <a class="font" href="#">Papagaio<span><img src="images/papagaio.jpg" width="400"></span></a>
+            </li>
+            <li>
+                <a class="font" href="#">Coruja<span><img src="images/coruja.jpg" width="400"></span></a>
+            </li>
+            <li>
+                <a class="font" href="#">Urso<span><img src="images/urso.jpg" width="400"></span></a>
+            </li>
+        </ul>
+    </body>
+</html>
