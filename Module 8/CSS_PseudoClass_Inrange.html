@@ -1,0 +1,32 @@
+
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>in range and out of range selectors</title> 
+        <style> 
+            h1 { 
+            color:green; 
+            } 
+            input:in-range { 
+                border: 1px solid black; 
+                background:blue; 
+                color:white; 
+            }
+			input:out-of-range { 
+                border: 1px solid black; 
+                background:red; 
+                color:yellow; 
+            } 
+            body { 
+                text-align:center; 
+            } 
+        </style> 
+    </head> 
+    <body> 
+        <h1>Selectors :in-range/out-of-range</h1> 
+        <h2>:in-range and out-of-range pseudo-classes</h2> 
+        <!-- If selected number is less then 20 and greater then 
+        40 then the CSS property of input elements will change. -->
+        Select Number: <input type="number" min="20" max="40"> 
+    </body> 
+</html>
