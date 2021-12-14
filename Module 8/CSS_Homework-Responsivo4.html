@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsivo:Railton</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Create four equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 25%;
+		  padding: 20px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+		.fourcolumn{
+			display:block;
+		}
+		.twocolumn,.onecolumn{
+			display:none;
+		}
+
+		/* On screens that are 992px wide or less, go from four columns to two columns */
+		@media screen and (max-width: 992px) {
+		  .column {
+			width: 50%;
+		  }
+		  .fourcolumn,.onecolumn{
+			display:none;
+		  }
+		  .twocolumn{
+			display:block;
+		  }
+		}
+
+		/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column {
+			width: 100%;
+		  }
+		  .fourcolumn,.twocolumn{
+			display:none;
+		  }
+		  .onecolumn{
+			display:block;
+		  }
+		}
+		</style>
+	</head>
+	<body>
+
+		<h2>Layout responsivo com 4 colunas</h2>
+		<p><strong>Redimensiona a janela do browser para ver o efeito responsivo.</strong> Em telas com largura de 992 px ou menos, as colunas serão redimensionadas de quatro colunas para duas colunas. Em telas com largura de 600 px ou menos, as colunas serão empilhadas uma em cima da outra, em vez de uma ao lado da outra.</p>
+
+		<div class="row">
+			<div class="column" style="background-color:#aaa;">
+				<div class="fourcolumn" >
+					<h2>Coluna 1</h2>
+					<p>Linha 1</p>
+				</div>
+				<div class="twocolumn">
+					<h2>Coluna 1</h2>
+					<p>Linha 1</p>
+				</div>
+				<div class="onecolumn" >
+					<h2>Coluna 1</h2>
+					<p>Linha 1</p>
+				</div>
+			</div>
+			<div class="column" style="background-color:#bbb;">
+				<div class="fourcolumn" >
+					<h2>Coluna 2</h2>
+					<p>Linha 1</p>
+				</div>
+				<div class="twocolumn" >
+					<h2>Coluna 2</h2>
+					<p>Linha 1</p>
+				</div>
+				<div class="onecolumn" >
+					<h2>Coluna 1</h2>
+					<p>Linha 2</p>
+				</div>
+			</div>
+			<div class="column" style="background-color:#ccc;">
+				<div class="fourcolumn" >
+					<h2>Coluna 3</h2>
+					<p>Linha 1</p>
+				</div>
+				<div class="twocolumn" >
+					<h2>Coluna 1</h2>
+					<p>Linha 2</p>
+				</div>
+				<div class="onecolumn" >
+					<h2>Coluna 1</h2>
+					<p>Linha 3</p>
+				</div>
+			</div>
+			<div class="column" style="background-color:#ddd;">
+				<div class="fourcolumn" >
+					<h2>Coluna 4</h2>
+					<p>Linha 1</p>
+				</div>
+				<div class="twocolumn" >
+					<h2>Coluna 2</h2>
+					<p>Linha 2</p>
+				</div>
+				<div class="onecolumn" >
+					<h2>Coluna 1</h2>
+					<p>Linha 4</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
