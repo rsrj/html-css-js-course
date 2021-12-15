@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>substr - Railton</title>
+	</head>
+	<body>
+
+		<h2>JavaScript String Methods</h2>
+
+		<p>The substr() method extract a part of a string
+		and returns the extracted parts in a new string:</p>
+
+		<p id="demo"></p>
+
+		<script>
+			var str = "Maça, Banana, Kiwi, Uva";
+			var frutas = [str.substr(0,4),str.substr(6,6),str.substr(14,4),str.substr(20,3)];
+			
+			var paragraph = document.getElementById("demo");
+			for (i in frutas){
+				let newParagraph = document.createElement('p');
+				newParagraph.innerHTML=frutas[i];
+				paragraph.appendChild(newParagraph);
+			}
+		</script>
+
+	</body>
+</html>
